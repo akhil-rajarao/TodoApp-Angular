@@ -10,7 +10,6 @@ export class TodoListComponent implements OnInit { // Implement OnInit interface
   constructor(private storeData: TodoStoreService) {}
 
   arrayFromStore: any;
-
   onDelete = (x: any) => {
     console.log(x);
     this.storeData.removeItem(x);
