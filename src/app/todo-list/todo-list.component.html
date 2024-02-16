@@ -1,0 +1,11 @@
+<h1 class="text-center mt-5 text-secondary">Todo List</h1>
+<div class="row">
+  <ul class="list-group col-6 mx-auto">
+    <li class="list-group-item" *ngFor="let x of arrayFromStore">
+      {{ x }}
+      <button class="btn btn-danger thebutton" (click)="onDelete(x)">
+        &#10005;
+      </button>
+    </li>
+  </ul>
+</div>
